@@ -2,7 +2,7 @@ class CreateUnidomProducts < ActiveRecord::Migration
 
   def change
 
-    create_table :products, id: :uuid do |t|
+    create_table :unidom_products, id: :uuid do |t|
 
       t.string :name,             null: false, default: '', limit: 200
       t.string :abbreviation,     null: false, default: '', limit: 8
@@ -25,9 +25,9 @@ class CreateUnidomProducts < ActiveRecord::Migration
 
     end
 
-    add_index :products, :slug, unique: true
-    add_index :products, :name
-    add_index :products, :abbreviation
+    add_index :unidom_products, :slug, unique: true
+    add_index :unidom_products, :name
+    add_index :unidom_products, :abbreviation
 
   end
 
