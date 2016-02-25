@@ -6,7 +6,7 @@ require 'unidom/product/version'
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
   spec.name        = 'unidom-product'
-  spec.version     = ::Unidom::Product::VERSION
+  spec.version     = Unidom::Product::VERSION
   spec.authors     = [ 'Topbit Du' ]
   spec.email       = [ 'topbit.du@gmail.com' ]
   spec.homepage    = 'https://github.com/topbitdu/unidom-product'

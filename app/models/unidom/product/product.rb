@@ -9,4 +9,6 @@ class Unidom::Product::Product < ActiveRecord::Base
   validates :measurement_unit, presence: true, length: { in: 1..self.columns_hash['measurement_unit'].limit }
   validates :packing_norm,     presence: true, length: { in: 1..self.columns_hash['packing_norm'].limit     }
 
+  include Unidom::Common::Concerns::ModelExtension
+
 end
