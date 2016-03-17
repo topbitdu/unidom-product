@@ -18,5 +18,15 @@ rake db:migrate
 
 ## Call the Model
 ```ruby
-Unidom::Product::Product.valid_at.alive.first
+# Create a Product
+product = Unidom::Product::Product.create(name: 'Apple iPhone 6S Plus 64G',
+  abbreviation:     'iPhone 6S+ 64G',
+  measurement_unit: 'unit',
+  packing_norm:     '1 unit per pack',
+  formset_code:     'WARE',
+  description:      'the latest iPhone model',
+  instruction:      'It is almost sold out.')
+
+# Find the Product per Formset Code
+Product.formset_coded_as('SRVC').valid_at.alive.first
 ```
