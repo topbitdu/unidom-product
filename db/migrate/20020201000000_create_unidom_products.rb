@@ -25,9 +25,9 @@ class CreateUnidomProducts < ActiveRecord::Migration
 
     end
 
-    add_index :unidom_products, :slug, unique: true
     add_index :unidom_products, :name
     add_index :unidom_products, :abbreviation
+    add_index :unidom_products, :slug, unique: true
 
   end
 
