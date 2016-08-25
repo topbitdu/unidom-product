@@ -19,4 +19,23 @@ class Unidom::Product::ProductAssociating < ActiveRecord::Base
   belongs_to :source, class_name: 'Unidom::Product::Product'
   belongs_to :target, class_name: 'Unidom::Product::Product'
 
+  scope :source_is, ->(product) { where source_id: to_id(product) }
+  scope :target_is, ->(product) { where target_id: to_id(product) }
+
+  def self.associate!(source, target, product_association_code, ordinal = 1, quantity = 1, opened_at = Time.now)
+
+    associating = source_is(source).target_is(target).product_association_coded_as(product_association_code).valid_at.alive.first
+    associating.soft_destroy if associating.present?
+
+    #if associating.present?
+    #  associating.attributes = { ordinal: ordinal, quantity: quantity, opened_at: opened_at }
+    #  associating.save!
+    #else
+    #  associating = create! source_id: to_id(source), target_id: to_id(target), product_association_code: product_association_code, ordinal: ordinal, quantity: quantity, opened_at: opened_at
+    #end
+    #associating
+    create! source_id: to_id(source), target_id: to_id(target), product_association_code: product_association_code, ordinal: ordinal, quantity: quantity, opened_at: opened_at
+
+  end
+
 end
