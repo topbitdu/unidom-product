@@ -22,9 +22,9 @@ class Unidom::Product::ProductAssociating < ActiveRecord::Base
   scope :source_is, ->(product) { where source_id: to_id(product) }
   scope :target_is, ->(product) { where target_id: to_id(product) }
 
-  def self.associate!(source, target, product_association_code, ordinal = 1, quantity = 1, opened_at = Time.now)
+  def self.associate!(source, with: target, due_to: 'PCKG', ordinal: 1, quantity: 1, at: Time.now)
 
-    associating = source_is(source).target_is(target).product_association_coded_as(product_association_code).valid_at.alive.first
+    associating = source_is(source).target_is(with).product_association_coded_as(due_to).valid_at.alive.first
     associating.soft_destroy if associating.present?
 
     #if associating.present?
@@ -34,7 +34,7 @@ class Unidom::Product::ProductAssociating < ActiveRecord::Base
     #  associating = create! source_id: to_id(source), target_id: to_id(target), product_association_code: product_association_code, ordinal: ordinal, quantity: quantity, opened_at: opened_at
     #end
     #associating
-    create! source_id: to_id(source), target_id: to_id(target), product_association_code: product_association_code, ordinal: ordinal, quantity: quantity, opened_at: opened_at
+    create! source_id: to_id(source), target_id: to_id(with), product_association_code: due_to, ordinal: ordinal, quantity: quantity, opened_at: at
 
   end
 

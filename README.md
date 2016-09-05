@@ -34,4 +34,10 @@ product = Unidom::Product::Product.create(name: 'Apple iPhone 6S Plus 64G',
 
 # Find the Product per Formset Code
 Product.formset_coded_as('SRVC').valid_at.alive.first
+
+# Associate 2 products as incompatible
+Unidom::Product::ProductAssociating.associate! product_1, with: product_2, due_to: 'ICPT', ordinal: 1, quantity: 1, at: Time.now
+
+# Find the Product Associating per the source product & the target product
+associating = Unidom::Product::ProductAssociating.source_is(product_1).target_is(product_2).first
 ```
