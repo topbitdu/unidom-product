@@ -17,3 +17,8 @@
 
 ## v1.0
 1. Improved the Product Associating model to support the Keyword Arguments
+
+## v1.1
+1. As Source Product Associating concern
+2. As Target Product Associating concern
+3. Improved the Product model to include the As Source Product Associating concern & As Target Product Associating concern
