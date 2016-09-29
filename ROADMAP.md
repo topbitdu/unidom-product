@@ -21,4 +21,18 @@
 ## v1.1
 1. As Source Product Associating concern
 2. As Target Product Associating concern
-3. Improve the Prouct model to include the As Source Product Associating concern & As Target Product Associating concern
+3. Improve the Product model to include the As Source Product Associating concern & As Target Product Associating concern
+
+## v1.2
+1. Improve the As Source Product Associating concern to add the #associate! method
+2. Improve the As Target Product Associating concern to add the #is_associated! method
+
+## v1.3
+1. Improve the As Source Product Associating concern to add the #associate? method
+2. Improve the As Target Product Associating concern to add the #is_associated? method
+
+## v1.4
+1. Deprecate the As Source Product Associating & the As Target Product Associating concern
+2. As Source Product concern
+3. As Target Product concern
+4. Improve the Product model to include the As Source Product concern & the As Target Product concern
