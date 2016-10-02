@@ -26,3 +26,7 @@
 ## v1.2
 1. Improved the As Source Product Associating concern to add the #associate! method
 2. Improved the As Target Product Associating concern to add the #is_associated! method
+
+## v1.3
+1. Improved the As Source Product Associating concern to add the #associate? method
+2. Improved the As Target Product Associating concern to add the #is_associated? method
