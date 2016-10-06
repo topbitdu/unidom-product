@@ -36,3 +36,6 @@
 2. As Source Product concern
 3. As Target Product concern
 4. Improve the Product model to include the As Source Product concern & the As Target Product concern
+
+## v2.0
+1. Remove the deprecated classes and methods
