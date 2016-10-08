@@ -5,8 +5,8 @@ class Unidom::Product::Product < ActiveRecord::Base
   self.table_name = 'unidom_products'
 
   include Unidom::Common::Concerns::ModelExtension
-  include Unidom::Product::Concerns::AsSourceProductAssociating
-  include Unidom::Product::Concerns::AsTargetProductAssociating
+  include Unidom::Product::Concerns::AsSourceProduct
+  include Unidom::Product::Concerns::AsTargetProduct
 
   validates :name,             presence: true, length: { in: 2..self.columns_hash['name'].limit             }
   validates :abbreviation,     presence: true, length: { in: 1..self.columns_hash['abbreviation'].limit     }
