@@ -1,6 +1,6 @@
 # Product 是产品。
 
-class Unidom::Product::Product < ActiveRecord::Base
+class Unidom::Product::Product < Unidom::Product::ApplicationRecord
 
   self.table_name = 'unidom_products'
 
