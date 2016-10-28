@@ -8,7 +8,7 @@
 #   PCKG 是销售包装   package
 #   SBST 是产品替代   substitute
 
-class Unidom::Product::ProductAssociating < ActiveRecord::Base
+class Unidom::Product::ProductAssociating < Unidom::Product::ApplicationRecord
 
   self.table_name = 'unidom_product_associatings'
 
