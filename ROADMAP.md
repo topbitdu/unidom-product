@@ -1,7 +1,7 @@
 # Unidom Product Roadmap 产品领域模型引擎路线图
 
 ## v0.1
-1. Product model & migration
+1. Product model & migration (20020201000000)
 
 ## v0.2
 1. Improved the Product model to include the Model Extension concern
