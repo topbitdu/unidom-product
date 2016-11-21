@@ -32,7 +32,7 @@
 2. Improved the As Target Product Associating concern to add the #is_associated? method
 
 ## v1.4
-1. Deprecate the As Source Product Associating & the As Target Product Associating concern
+1. Deprecated the As Source Product Associating & the As Target Product Associating concern
 2. As Source Product concern
 3. As Target Product concern
 4. Improve the Product model to include the As Source Product concern & the As Target Product concern
