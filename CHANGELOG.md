@@ -35,7 +35,7 @@
 1. Deprecated the As Source Product Associating & the As Target Product Associating concern
 2. As Source Product concern
 3. As Target Product concern
-4. Improve the Product model to include the As Source Product concern & the As Target Product concern
+4. Improved the Product model to include the As Source Product concern & the As Target Product concern
 
 ## v1.4.1
 1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.6
