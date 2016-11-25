@@ -43,5 +43,10 @@
 ## v1.4.2
 1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.7
 
+## v1.5
+1. Improve the Ruby Gem Specification to depend on the [progne_tapera](https://github.com/topbitdu/progne_tapera) v0.3
+2. Product Association enum code
+3. Improve the Product Associating model to configure the Product Association enum code
+
 ## v2.0
 1. Remove the deprecated classes and methods
