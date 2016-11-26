@@ -1,0 +1,11 @@
+enum:
+
+  unidom_product_association:
+    complement:
+      code: 'CPLM'
+    incompatibility:
+      code: 'ICPT'
+    obsolescence:
+      code: 'OBSL'
+    substitute:
+      code: 'SBST'
