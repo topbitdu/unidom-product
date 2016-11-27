@@ -1,0 +1,8 @@
+'zh-CN':
+  enum:
+
+    unidom_product_association:
+      complement:      补充
+      incompatibility: 不兼容
+      obsolescence:    废弃
+      substitute:      替代
