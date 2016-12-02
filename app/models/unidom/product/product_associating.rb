@@ -2,17 +2,20 @@
 # source 是来源产品。如组合后的产品、被换代的产品、不兼容产品中的主产品。
 # target 是目标产品。如参与组合的产品、替换其它产品的新产品、不兼容产品中的次要产品。
 # product_association_code 是产品关联：
-#   CPLM 是产品补充   complement
-#   ICPT 是产品不兼容 incompatibility
-#   OBSL 是产品废弃   obsolescence
-#   PCKG 是销售包装   package
-#   SBST 是产品替代   substitute
+#   CPLM 是产品补充   complement: from, thru, reason
+#   ICPT 是产品不兼容 incompatibility: from, thru, reason
+#   OBSL 是产品废弃   obsolescence: on, reason
+#   PCKG 是销售包装(行销组件)   package: quantity, usage
+#   SBST 是产品替代   substitute: from, thru, quantity, comments
+# 构成: from, thru, quantity, usage, comments
+# 
 
 class Unidom::Product::ProductAssociating < Unidom::Product::ApplicationRecord
 
   self.table_name = 'unidom_product_associatings'
 
   include Unidom::Common::Concerns::ModelExtension
+  include ProgneTapera::EnumCode
 
   validates :quantity, presence: true, numericality: { greater_than_or_equal_to: 0    }
 
@@ -21,6 +24,8 @@ class Unidom::Product::ProductAssociating < Unidom::Product::ApplicationRecord
 
   scope :source_is, ->(product) { where source_id: to_id(product) }
   scope :target_is, ->(product) { where target_id: to_id(product) }
+
+  code :product_association, Unidom::Product::ProductAssociation
 
   def self.associate!(source, with: target, due_to: 'PCKG', ordinal: 1, quantity: 1, at: Time.now)
 
