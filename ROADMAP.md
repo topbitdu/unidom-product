@@ -13,7 +13,7 @@
 
 ## v0.4
 1. Improve the Product Associating model to add the ``source_is`` scope & the ::target_is scope
-2. Improve the Product Associating model to add the ::associate! method
+2. Improve the Product Associating model to add the .``associate!`` method
 
 ## v1.0
 1. Improve the Product Associating model to support the Keyword Arguments
