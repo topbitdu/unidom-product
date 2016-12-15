@@ -24,7 +24,7 @@
 3. Improved the Product model to include the As Source Product Associating concern & As Target Product Associating concern
 
 ## v1.2
-1. Improved the As Source Product Associating concern to add the #associate! method
+1. Improved the As Source Product Associating concern to add the #``associate!`` method
 2. Improved the As Target Product Associating concern to add the #is_associated! method
 
 ## v1.3
