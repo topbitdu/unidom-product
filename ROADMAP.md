@@ -52,5 +52,9 @@
 1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.7.1
 2. Improve the Ruby Gem Specification to never depend on [progne_tapera](https://github.com/topbitdu/progne_tapera)
 
+## v1.6
+1. Formset enum code
+2. Improve the Product model to configure the Formset enum code
+
 ## v2.0
 1. Remove the deprecated classes and methods
