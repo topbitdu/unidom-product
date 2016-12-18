@@ -9,3 +9,11 @@ enum:
       code: 'OBSL'
     substitute:
       code: 'SBST'
+
+  unidom_formset:
+    ware:
+      code: 'WARE'
+    service:
+      code: 'SRVC'
+    portfolio:
+      code: 'PTFL'
