@@ -6,3 +6,8 @@
       incompatibility: 不兼容
       obsolescence:    废弃
       substitute:      替代
+
+    unidom_formset:
+      ware:      货物
+      service:   服务
+      portfolio: 组合
