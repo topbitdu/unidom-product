@@ -1,5 +1,5 @@
 module Unidom
   module Product
-    VERSION = '1.5.1'.freeze
+    VERSION = '1.6'.freeze
   end
 end
