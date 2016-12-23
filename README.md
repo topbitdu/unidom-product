@@ -79,3 +79,15 @@ The As Target Product concern do the following tasks for the includer automatica
 2. Define the has_many :source_products macro as: ``has_many :source_products, through: :source_product_associatings, source: :source``  
 3. Define the #is_associated! method as: ``is_associated!(source, due_to: nil, at: Time.now, ordinal: 1)``  
 4. Define the #is_associated? method as: ``is_associated?(source, due_to: nil, at: Time.now)``
+
+
+
+## Enum codes
+
+### Formset enum code
+
+```ruby
+Unidom::Product::Formset::ware      # 货物
+Unidom::Product::Formset::service   # 服务
+Unidom::Product::Formset::portfolio # 组合
+```
