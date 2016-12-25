@@ -84,6 +84,15 @@ The As Target Product concern do the following tasks for the includer automatica
 
 ## Enum codes
 
+### Product Association enum code
+
+```ruby
+Unidom::Product::ProductAssociation::COMPLEMENT      # 补充
+Unidom::Product::ProductAssociation::INCOMPATIBILITY # 不兼容
+Unidom::Product::ProductAssociation::OBSOLESCENCE    # 废弃
+Unidom::Product::ProductAssociation::SUBSTITUTE      # 替代
+```
+
 ### Formset enum code
 
 ```ruby
