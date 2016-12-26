@@ -25,7 +25,7 @@
 
 ## v1.2
 1. Improve the As Source Product Associating concern to add the #``associate!`` method
-2. Improve the As Target Product Associating concern to add the #is_associated! method
+2. Improve the As Target Product Associating concern to add the #``is_associated!`` method
 
 ## v1.3
 1. Improve the As Source Product Associating concern to add the #associate? method
