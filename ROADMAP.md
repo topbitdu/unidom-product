@@ -56,5 +56,9 @@
 1. Formset enum code
 2. Improve the Product model to configure the Formset enum code
 
+## v1.6.1
+1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.8
+2. Improve the Engine class to include the Engine Extension
+
 ## v2.0
 1. Remove the deprecated classes and methods
