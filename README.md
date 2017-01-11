@@ -1,6 +1,8 @@
 # Unidom Product 产品领域模型引擎
 
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/unidom-product/frames)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
+
 [![Gem Version](https://badge.fury.io/rb/unidom-product.svg)](https://badge.fury.io/rb/unidom-product)
 [![Dependency Status](https://gemnasium.com/badges/github.com/topbitdu/unidom-product.svg)](https://gemnasium.com/github.com/topbitdu/unidom-product)
 
@@ -66,18 +68,18 @@ include Unidom::Product::Concerns::AsTargetProduct
 
 ### As Source Product concern
 
-The As Source Product concern do the following tasks for the includer automatically:  
-1. Define the has_many :target_product_associatings macro as: ``has_many :target_product_associatings, class_name: 'Unidom::Product::ProductAssociating', foreign_key: :source_id``  
-2. Define the has_many :target_products macro as: ``has_many :target_products, through: :target_product_associatings, source: :target``  
-3. Define the #associate! method as: ``associate!(target, due_to: nil, at: Time.now, ordinal: 1)``  
+The As Source Product concern do the following tasks for the includer automatically:
+1. Define the has_many :target_product_associatings macro as: ``has_many :target_product_associatings, class_name: 'Unidom::Product::ProductAssociating', foreign_key: :source_id``
+2. Define the has_many :target_products macro as: ``has_many :target_products, through: :target_product_associatings, source: :target``
+3. Define the #associate! method as: ``associate!(target, due_to: nil, at: Time.now, ordinal: 1)``
 4. Define the #associate? method as: ``associate?(target, due_to: nil, at: Time.now)``
 
 ### As Target Product concern
 
-The As Target Product concern do the following tasks for the includer automatically:  
-1. Define the has_many :source_product_associatings macro as: ``has_many :source_product_associatings, class_name: 'Unidom::Product::ProductAssociating', foreign_key: :target_id``  
-2. Define the has_many :source_products macro as: ``has_many :source_products, through: :source_product_associatings, source: :source``  
-3. Define the #is_associated! method as: ``is_associated!(source, due_to: nil, at: Time.now, ordinal: 1)``  
+The As Target Product concern do the following tasks for the includer automatically:
+1. Define the has_many :source_product_associatings macro as: ``has_many :source_product_associatings, class_name: 'Unidom::Product::ProductAssociating', foreign_key: :target_id``
+2. Define the has_many :source_products macro as: ``has_many :source_products, through: :source_product_associatings, source: :source``
+3. Define the #is_associated! method as: ``is_associated!(source, due_to: nil, at: Time.now, ordinal: 1)``
 4. Define the #is_associated? method as: ``is_associated?(source, due_to: nil, at: Time.now)``
 
 
