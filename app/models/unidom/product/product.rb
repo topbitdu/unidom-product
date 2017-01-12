@@ -1,3 +1,4 @@
+##
 # Product 是产品。
 
 class Unidom::Product::Product < Unidom::Product::ApplicationRecord
