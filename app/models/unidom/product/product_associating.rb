@@ -1,3 +1,4 @@
+##
 # Product Associating 表示产品之间的关联。常见的关联包括销售包装、产品换代等。
 # source 是来源产品。如组合后的产品、被换代的产品、不兼容产品中的主产品。
 # target 是目标产品。如参与组合的产品、替换其它产品的新产品、不兼容产品中的次要产品。
@@ -8,7 +9,7 @@
 #   PCKG 是销售包装(行销组件)   package: quantity, usage
 #   SBST 是产品替代   substitute: from, thru, quantity, comments
 # 构成: from, thru, quantity, usage, comments
-# 
+#
 
 class Unidom::Product::ProductAssociating < Unidom::Product::ApplicationRecord
 
