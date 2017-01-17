@@ -17,4 +17,4 @@ class Unidom::Product::Product < Unidom::Product::ApplicationRecord
 
   code :formset, Unidom::Product::Formset
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Product::Product'
