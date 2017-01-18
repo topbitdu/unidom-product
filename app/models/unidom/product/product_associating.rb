@@ -44,4 +44,4 @@ class Unidom::Product::ProductAssociating < Unidom::Product::ApplicationRecord
 
   end
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Product::ProductAssociating'
