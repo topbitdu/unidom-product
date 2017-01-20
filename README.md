@@ -102,3 +102,19 @@ Unidom::Product::Formset::ware      # 货物
 Unidom::Product::Formset::service   # 服务
 Unidom::Product::Formset::portfolio # 组合
 ```
+
+
+
+## Disable the Model & Migration
+
+If you only need the app components other than models, the migrations should be neglected, and the models should not be loaded.
+```ruby
+# config/initializers/unidom.rb
+Unidom::Common.configure do |options|
+
+  options[:neglected_namespaces] = %w{
+    Unidom::Product
+  }
+
+end
+```
