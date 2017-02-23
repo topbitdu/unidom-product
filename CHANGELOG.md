@@ -70,6 +70,6 @@
 3. Validators RSpec examples manifest
 
 ## v1.7.1
-1. Improve the Product Associating model for the validations on the #``quantity`` attribute
+1. Improved the Product Associating model for the validations on the #``quantity`` attribute
 2. Improve the Product spec for the validations on the #name attribute, the #abbreviation attribute, the #measurement_unit attribute, the #packing_norm attribute, & the #formset_code attribute
 3. Improve the Product Associating spec for the validations on the #quantity attribute, & the #product_association_code attribute
