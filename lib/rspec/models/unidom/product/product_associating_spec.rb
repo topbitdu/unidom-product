@@ -42,6 +42,17 @@ describe Unidom::Product::ProductAssociating, type: :model do
 
     it_behaves_like 'ProgneTapera::EnumCode', described_class.new(model_attributes), :product_association, Unidom::Product::ProductAssociation
 
+    product_attributes = {
+      name:             'Model X',
+      abbreviation:     'MX',
+      measurement_unit: 'car',
+      packing_norm:     '1 car',
+      formset_code:     'WARE'
+    }
+
+    it_behaves_like 'belongs_to', model_attributes, :source, Unidom::Product::Product, product_attributes
+    it_behaves_like 'belongs_to', model_attributes, :target, Unidom::Product::Product, product_attributes
+
   end
 
 end
