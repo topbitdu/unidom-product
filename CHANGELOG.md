@@ -73,3 +73,6 @@
 1. Improved the Product Associating model for the validations on the #``quantity`` attribute
 2. Improved the Product spec for the validations on the #name attribute, the #abbreviation attribute, the #measurement_unit attribute, the #packing_norm attribute, & the #formset_code attribute
 3. Improved the Product Associating spec for the validations on the #quantity attribute, & the #product_association_code attribute
+
+## v1.7.2
+1. Improve the Product Associating spec for the ``belongs_to :source, class_name: 'Unidom::Product::Product'`` macro, & the ``belongs_to :target, class_name: 'Unidom::Product::Product'`` macro
