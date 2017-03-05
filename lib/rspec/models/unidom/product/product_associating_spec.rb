@@ -53,6 +53,9 @@ describe Unidom::Product::ProductAssociating, type: :model do
     it_behaves_like 'belongs_to', model_attributes, :source, Unidom::Product::Product, product_attributes
     it_behaves_like 'belongs_to', model_attributes, :target, Unidom::Product::Product, product_attributes
 
+    it_behaves_like 'monomorphic scope', model_attributes, :source_is, :source
+    it_behaves_like 'monomorphic scope', model_attributes, :target_is, :target
+
   end
 
 end
