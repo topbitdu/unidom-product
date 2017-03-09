@@ -1,3 +1,6 @@
+##
+# As Source Product Associating 是产品关联的源关系的领域逻辑关注点。
+
 module Unidom::Product::Concerns::AsSourceProductAssociating
 
   extend ActiveSupport::Concern
