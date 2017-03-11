@@ -1,3 +1,6 @@
+##
+# As Target Product Associating 是产品关联的目的关系的领域逻辑关注点。
+
 module Unidom::Product::Concerns::AsTargetProductAssociating
 
   extend ActiveSupport::Concern
