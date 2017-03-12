@@ -1,3 +1,6 @@
+##
+# As Source Product 是产品关联的源产品的领域逻辑关注点。
+
 module Unidom::Product::Concerns::AsSourceProduct
 
   extend ActiveSupport::Concern
