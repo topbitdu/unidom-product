@@ -80,5 +80,10 @@
 ## v1.7.3
 1. Improve the Product Associating spec for the source_is scope, & the target_is scope
 
+## v1.7.4
+1. Improve the Product Associating model for the validations on the #quantity attribute
+2. Improve the Product Associating spec for the validations on the #quantity attribute
+3. Improve the Product spec for the validations on the #name attribute, the #abbreviation attribute, the #measurement_unit attribute, the #packing_norm attribute
+
 ## v2.0
 1. Remove the deprecated classes and methods
