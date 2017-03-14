@@ -1,3 +1,6 @@
+##
+# As Target Product 是产品关联的目的产品的领域逻辑关注点。
+
 module Unidom::Product::Concerns::AsTargetProduct
 
   extend ActiveSupport::Concern
