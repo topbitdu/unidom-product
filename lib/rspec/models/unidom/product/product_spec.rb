@@ -16,7 +16,8 @@ describe Unidom::Product::Product, type: :model do
       formset_code:     'WARE'
     }
 
-    it_behaves_like 'Unidom::Common::Concerns::ModelExtension', model_attributes
+    it_behaves_like 'Unidom::Common::Concerns::ModelExtension',   model_attributes
+    it_behaves_like 'Unidom::Product::Concerns::AsSourceProduct', model_attributes
 
     it_behaves_like 'validates text', model_attributes, :name,
       length: 2..described_class.columns_hash['name'].limit
