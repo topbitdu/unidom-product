@@ -90,5 +90,10 @@
 2. RSpec shared examples manifest
 3. Improve the Product spec for the As Source Product concern
 
+## v1.7.6
+1. As Target Product shared examples
+2. Improve the RSpec shared examples manifest to remove the As Source Product shared examples & the As Target Product shared examples
+3. Improve the Product spec for the As Target Product concern
+
 ## v2.0
 1. Remove the deprecated classes and methods
