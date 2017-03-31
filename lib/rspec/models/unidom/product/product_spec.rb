@@ -1,3 +1,6 @@
+require 'rspec/models/unidom/product/concerns/as_source_product_shared_examples'
+require 'rspec/models/unidom/product/concerns/as_target_product_shared_examples'
+
 describe Unidom::Product::Product, type: :model do
 
   before :each do
@@ -18,6 +21,7 @@ describe Unidom::Product::Product, type: :model do
 
     it_behaves_like 'Unidom::Common::Concerns::ModelExtension',   model_attributes
     it_behaves_like 'Unidom::Product::Concerns::AsSourceProduct', model_attributes
+    it_behaves_like 'Unidom::Product::Concerns::AsTargetProduct', model_attributes
 
     it_behaves_like 'validates text', model_attributes, :name,
       length: 2..described_class.columns_hash['name'].limit
