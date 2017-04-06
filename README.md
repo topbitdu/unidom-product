@@ -139,7 +139,7 @@ require 'unidom/product/validators_rspec'
 ### RSpec shared examples (to be integrated)
 
 ```ruby
-# The Unidom::Product::Product model already include the Unidom::Product::Concerns::AsSourceProduct concern
+# The Unidom::Product::Product model already include the Unidom::Product::Concerns::AsSourceProduct concern, & the Unidom::Product::Concerns::AsSourceProduct concern
 
 # spec/support/unidom_rspec_shared_examples.rb
 require 'unidom/prooduct/rspec_shared_examples'
