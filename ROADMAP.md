@@ -95,5 +95,11 @@
 2. Improve the RSpec shared examples manifest to remove the As Source Product shared examples & the As Target Product shared examples
 3. Improve the Product spec for the As Target Product concern
 
+## v1.7.7
+1. Improve the As Source Product concern for the argument validations of the #associate! method, & the #associate? method
+2. Improve the As Target Product concern for the argument validations of the #is_associated! method, & the #is_associated? method
+3. Improve the As Source Product shared examples for the argument validations of the #associate! method, & the #associate? method
+4. Improve the As Target Product shared examples for the argument validations of the #is_associated! method, & the #is_associated? method
+
 ## v2.0
 1. Remove the deprecated classes and methods
