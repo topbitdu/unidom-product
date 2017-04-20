@@ -12,7 +12,7 @@
 3. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.0
 
 ## v0.4
-1. Improved the Product Associating model to add the ::source_is scope & the ::target_is scope
+1. Improved the Product Associating model to add the ``source_is`` scope & the ::target_is scope
 2. Improved the Product Associating model to add the .``associate!`` method
 
 ## v1.0
