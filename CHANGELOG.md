@@ -82,7 +82,7 @@
 
 ## v1.7.4
 1. Improved the Product Associating model for the validations on the #quantity attribute
-2. Improve the Product Associating spec for the validations on the #quantity attribute
+2. Improved the Product Associating spec for the validations on the #quantity attribute
 3. Improve the Product spec for the validations on the #name attribute, the #abbreviation attribute, the #measurement_unit attribute, the #packing_norm attribute
 
 ## v1.7.5
