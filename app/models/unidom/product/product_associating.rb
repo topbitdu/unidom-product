@@ -18,7 +18,7 @@ class Unidom::Product::ProductAssociating < Unidom::Product::ApplicationRecord
   include Unidom::Common::Concerns::ModelExtension
   include ProgneTapera::EnumCode
 
-  validates :quantity, presence: true, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 1_000_000_000 }
+  validates :quantity, presence: true, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: Unidom::Common::MAXIMUM_AMOUNT }
 
   belongs_to :source, class_name: 'Unidom::Product::Product'
   belongs_to :target, class_name: 'Unidom::Product::Product'
