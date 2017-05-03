@@ -100,3 +100,8 @@
 2. Improve the As Target Product concern for the argument validations of the #is_associated! method, & the #is_associated? method
 3. Improve the As Source Product shared examples for the argument validations of the #associate! method, & the #associate? method
 4. Improve the As Target Product shared examples for the argument validations of the #is_associated! method, & the #is_associated? method
+
+## v1.7.8
+1. Improve the Ruby Gem Specification to depend on unidom-common v1.10
+2. Improve the Product migration, & Product Associating migration for the #opened_at column, & the #closed_at column
+3. Improve the Product Associating model for the validations on the #quantity attribute
