@@ -92,7 +92,7 @@
 
 ## v1.7.6
 1. As Target Product shared examples
-2. Improve the RSpec shared examples manifest to remove the As Source Product shared examples & the As Target Product shared examples
+2. Improved the RSpec shared examples manifest to remove the As Source Product shared examples & the As Target Product shared examples
 3. Improve the Product spec for the As Target Product concern
 
 ## v1.7.7
