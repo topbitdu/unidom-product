@@ -7,7 +7,7 @@
 1. Improved the Product model to include the Model Extension concern
 
 ## v0.3
-1. Product Associating model & migration
+1. Product Associating model & migration (20020211000000)
 2. Improved the Product model to add the ``has_many :source_product_associatings`` macro, the ``has_many :source_products`` macro, the ``has_many :target_product_associatings`` macro, & the ``has_many :target_products`` macro
 3. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.0
 
