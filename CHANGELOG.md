@@ -29,7 +29,7 @@
 
 ## v1.3
 1. Improved the As Source Product Associating concern to add the #``associate?`` method
-2. Improved the As Target Product Associating concern to add the #is_associated? method
+2. Improved the As Target Product Associating concern to add the #``is_associated?`` method
 
 ## v1.4
 1. Deprecated the As Source Product Associating & the As Target Product Associating concern
